@@ -9,8 +9,8 @@ const keySound = document.getElementById("key-sound");
 
 const history = document.getElementById("history");
 const pressedKeyWrapper = document.getElementById("pressed-keyWrapper");
-// Key History Array
 
+// Key History Array
 let keyHistory = [];
 
 document.addEventListener("keydown", (event) => {
@@ -33,7 +33,7 @@ document.addEventListener("keydown", (event) => {
     modifiers.push("Ctrl");
   }
   if (event.metaKey) {
-    modifiers.push("Meta"); // Windows key on Windows, Command key on Mac
+    modifiers.push("Meta"); 
   }
 
   const modifierKeys = modifiers.join(" + ");
