@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
     display: flex;
+    background-color: #3498db;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -9,12 +9,14 @@ body {
     text-align: center;
 }
 
-.container {
-    background-color: #3498db;
+#container {
+    width: 100%;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); */
     padding: 30px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .key-display {
@@ -48,8 +50,86 @@ span {
     -o-transition: transform 0.1s, background-color 0.1s;
 }
 
-#output-wrapper{
+#output-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.history {
+    height: fit-content;
+    max-height: 300px;
+    text-align: left;
+    color: white;
+    background-color: #2980b9;
+    width: 250px;
+    padding: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: none;
+}
+
+#pressed-keyWrapper {
+    padding-right: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    overflow: auto;
+    max-height: 260px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.pressedKey {
+    width: max-content;
+    background-color: #3498db;
+    display: flex;
+    padding: 5px 8px;
+    gap: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.pressedKey .key{
+    font-weight: 500;
+    text-shadow: none;
+    margin: 0;
+    font-size: 1.5rem;
+    align-self: flex-start;
+}
+
+.time {
+    font-size: .5rem;
+    color: rgb(237, 231, 231);
+    align-self: flex-end;
+}
+
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #76aed3;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(237, 234, 234);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

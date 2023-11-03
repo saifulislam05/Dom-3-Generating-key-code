@@ -11,12 +11,19 @@
     <div id="container">
         <div class="key-display">
             <p id="first-p">Press any keyboard key</p>
-            <audio id="key-sound" src="mech-keyboard-02-102918_iUtqtwjz.mp3" hidden></audio>
+            <audio id="key-sound" src="keypress.mp3" hidden></audio>
 
            <div id="output-wrapper"  style="display: none;">
              <p>You pressed: <span id="pressed-key"></span></p>
             <p>Key Code: <span id="key-code"></span></p>
            </div>
+        </div>
+        <div id="history" class="history" style="display: none;">
+            <p class="title">Key History</p>
+            <hr>
+            <div id="pressed-keyWrapper">
+               
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
